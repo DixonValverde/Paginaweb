@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <div class="theme-toggle">
+        <button id="themeToggle" class="theme-toggle-btn">
+            <span class="light-icon">☀️</span>
+            <span class="dark-icon">🌙</span>
+        </button>
+    </div>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.32/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <!-- Página Principal -->
+    <div id="mainPage" class="container">
+        <div class="welcome">
+            <h1>🌟💻Bienvenido al Curso de programacion estructrada y programacion orientada a objetos🌟</h1>
+            <p class="quote">"Aprender a programar es aprender a pensar de una manera diferente." - Steve Jobs</p>
+        </div>
+
+        <div class="section">
+            <h2>📝 Programación Estructurada 📝</h2>
+            <div class="imagen-container">
+                <img src="estruturada.jpg" alt="Programación Estructurada" class="centered-image6">
+                <h2>¿Que es?</h2>
+                <p>
+                    Es un paradigma de programación que surgió en la década de 1960. Este enfoque 
+                    enfatiza la importancia de escribir código de manera organizada y fácil de entender, utilizando tres 
+                    estructuras básicas de control:
+                </p>
+                <h2>Historia de la programacion estructurada</h2>
+                <img src ="plauger.jpg" alt="historia" class="centered-image7">
+                <p>El teorema del programa estructurado establece que las tres estructuras básicas: secuencia, selección e iteración, son suficientes para expresar cualquier función computable. Esta idea no es nueva, ya que refleja el ciclo de instrucción de un 
+                    procesador y el funcionamiento de una máquina de Turing. Se atribuye a un documento de 1966 por Böhm y Jacopini. Sin embargo, el teorema no enseña cómo escribir y analizar programas estructurados, un tema explorado por Dijkstra 
+                    y otros en los años 60 y 70.</p>
+                <p>P. J. Plauger, defensor de la programación estructurada, compartió su experiencia con programadores resistentes. Donald Knuth defendió el uso de la sentencia GOTO en ciertos casos. En los 70, 
+                    Harlan Mills aplicó estas teorías en un exitoso proyecto en New York Times. En 1987, Frank Rubin planteó dudas sobre la sentencia GOTO, generando debates. A finales del siglo XX, la mayoría de 
+                    los científicos aceptaron la importancia de la programación estructurada, y lenguajes como FORTRAN y COBOL incorporaron estas estructuras.</p>
+                <h2>Uso de las estruturas basicas</h2>
+                <p>Exiten 3 estructuras basicas que son las siguientes:</p>
+                <ul>
+                    <li>🔄 <strong>Secuencia:</strong> Ejecutar instrucciones una después de otra</li>
+                    <li>🔀 <strong>Selección:</strong> Tomar decisiones usando estructuras como IF-THEN-ELSE</li>
+                    <li>🔁 <strong>Iteración:</strong> Repetir acciones usando bucles como WHILE y FOR</li>
+                </ul>
+                <div class="section">
+                <h2>Conceptos basicos</h2>
+                <p>Ahora te vamos a enseñar 4 conceptos basicos que se usa en la programacion estructrada que son 4 que te explicaremos</p>
+                <h3>Variable</h3>
+                <p>Un contenedor o caja que nos permite almacenar información en la memoria del ordenador para su uso posterior. 
+                    Estos datos pueden ser de varios tipos, como números, texto o valores verdadero/falso.</p>
+                    <div class="example">
+                        <pre>
+nombre = "Boris"         # Almacena texto (string)
+edad = 20                # Almacena un número entero (integer)
+altura = 1.77            # Almacena un número decimal (float)
+es_estudiante = True     # Almacena un valor Booleano que es (true o false)
+                        </pre>
+
+                    </div>
+                    <h3>Condicionales</h3>
+                    <p>Estas son las estructuras que permiten tomar decisiones en nuestro código, 
+                        es decir, ejecutar diferentes bloques de código dependiendo de si se cumple una condición un ejemplo con
+                    la temperatura de una persona</p>
+                        <div class="example">
+                            <pre>
+temperatura = 38
+if temperatura >= 37.5:
+    print("Tienes fiebre")
+    else:
+        print("Temperatura normal")
+
+                            </pre>
+                        </div>
+                        <h3>🌀Bucles🌀</h3>
+                        <p>Los bucles permiten repetir un bloque de código varias veces pero hay 2 tipos de bucles que son:</p>
+                        <li>Bucle for</li>
+                        <li>Bucle white</li>
+                        <p>Vamos con el ejemplo de bucle for</p>
+                        <div class="example">
+                            <pre>
+# Imprime números del 0 al 4
+for i in range(5):
+    print(i)
+                                
+# Recorrer una lista
+frutas = ["manzana", "pera", "uva","cereza"]
+for fruta in frutas:
+    print(f"Me gusta la {fruta}")
+                                
+# For con range específico
+for num in range(0, 21):  # del 1 al 20
+print(num)
+                            </pre>
+                        </div>
+                        <p>Vamos con el ejemplo del bucle while</p>
+                        <div class="example">
+                            <pre>
+# Ejemplo con contraseña
+contraseña = ""
+while contraseña != "boris777":
+    contraseña = input("Ingresa la contraseña: ")
+print("¡Acceso concedido!")
+                            </pre>
+
+                        </div>
+                        <h3>Funciones</h3>
+                        <p>Las funciones son bloques de código reutilizable que realizan una tarea en específica =D :</p>
+                        <div class="example">
+                            <pre>
+def saludar():
+print("Hola guap@")
+                            
+# Llamar la función
+saludar()
+                            </pre>
+
+                        </div>
+
+                        <h3>Modularidad</h3>
+                        <p>El principio es dividir el programa en partes más pequeñas (módulos) que puedan 
+                            funcionar independientemente. Cada módulo maneja una tarea específica,
+                             haciendo que el código sea más organizado, reutilizable y fácil de mantener.</p>
+                        <p>Para esto vamos a mostrar un ejemplo por partes</p>
+                        <div class="example">
+                            <pre>
+                                operaciones.py
+                                def sumar(a, b):
+                                return a + b
+                            
+                            def restar(a, b):
+                                return a - b
+                            
+                            def multiplicar(a, b):
+                                return a * b
+                            
+                            def dividir(a, b):
+                                if b != 0:
+                                    return a / b
+                                return "Error: División por cero"
+                            </pre>
+                            <p>Esta parte hace la funcion de poder calcular los numeros ingresados</p>
+                            <pre>
+ def validar_numero(numero):
+    try:
+        float(numero)
+        return True
+    except ValueError:
+        return False
+                            </pre>
+                            <p>validacion de numeros si el usuario ingresa el numero</p>
+                            <pre>
+def validar_operacion(op):
+operaciones_validas = ['+', '-', '*', '/']
+return op in operaciones_validas
+                            </pre>
+                            <p>Validacion de operaciones como suma,resta,multiplicacion y division</p>
+                            <pre>
+from calculadora import sumar, restar, multiplicar, dividir
+from validaciones import validar_numero, validar_operacion
+
+def realizar_operacion():
+    # Obtener primer número
+    num1 = input("Ingrese primer número: ")
+    if not validar_numero(num1):
+        return "Error: Primer número no válido"
+    
+    # Obtener operación
+    operacion = input("Ingrese operación (+, -, *, /): ")
+    if not validar_operacion(operacion):
+        return "Error: Operación no válida"
+    
+    # Obtener segundo número
+    num2 = input("Ingrese segundo número: ")
+    if not validar_numero(num2):
+        return "Error: Segundo número no válido"
+    
+    # Convertir a float
+    num1 = float(num1)
+    num2 = float(num2)
+    
+    # Realizar calculo
+    if operacion == '+':
+        resultado = sumar(num1, num2)
+    elif operacion == '-':
+        resultado = restar(num1, num2)
+    elif operacion == '*':
+        resultado = multiplicar(num1, num2)
+    else:
+        resultado = dividir(num1, num2)
+    
+    return f"Resultado: {resultado}"
+<p>llamamamos alas funciones validar numero y operaciones que ingresamos anteriormente y 
+    agregamos una nueva funcion que es agregar los numeros y convertir los numeros ingresados en float
+    y realizar los siguientes calculos
+</p>
+                            </pre>
+                            <p>ahora creamos la funcion main para el punto de entrada y para que funcione llamamos alas otras funciones
+                                creadas y ponemos main al final para que funcione
+                            </p>
+                            <pre>
+from interfaz import realizar_operacion
+
+def main():
+    print("Calculadora Modular")
+    print("-" * 20)
+    resultado = realizar_operacion()
+    print(resultado)
+
+    main()
+
+                            </pre>
+                        </div>
+
+
+
+                      
+                </div>
+                
+               
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🤔¿Qué es POO?🤔</h2>
+            <div class="imagen-container">
+                <img src="rubik.jpg" alt="Concepto de POO" class="centered-image">
+                <p>La programación orientada a objetos o llamada como (POO) es un paradigma de programación basado en la idea de modelar el mundo real utilizando objetos, que son entidades que combinan datos (atributos o propiedades) y comportamiento (métodos o funciones).
+                    En programación orientada a objetos, en lugar de escribir todo el código en una estructura enorme y confusa, se divide el programa en partes más pequeñas y organizadas llamadas clases. Una clase es como una forma o plantilla que define las propiedades y el comportamiento que estarán presentes en los objetos creados a partir de ella.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>¿Para qué funciona?</h2>
+            <div class="imagen-container2">
+                <img src="pooxd.jpg" alt="pa que" class="centered-image2">
+                <p>funciona para estructurar y organizar el código de una manera más clara, reutilizable y fácil de mantener. Se usa en una gran variedad de aplicaciones, desde videojuegos hasta sistemas empresariales.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>📹Historia de la programacion orientada a objetos📹</h3>
+            <div class="iamgen-container3">
+                <img src="historia poo.jpg" alt="imagen de historia" class="centered-image3">
+                <p>La programación orientada a objetos (POO) es un desarrollo de programación estructurado utilizado para resolver problemas relacionados con la complejidad del software. Su desarrollo tomó décadas con contribuciones significativas de varios lingüistas y científicos informáticos.
+                </p>
+                <h3>🎩Decada de los 60🎩</h3>
+                <p>En la década de 1960, el ingeniero noruego Ole-Johan Dahl y el científico de la computación Kristen Nygaard del Centro de Computación Noruego (Norsk Regnesentral) estaban trabajando en simulaciones para representar sistemas complejos. Para ello, desarrollaron un lenguaje llamado Simula (1967), considerado el primer lenguaje de programación orientado a objetos.
+
+                    Simula introdujo conceptos como:
+                    
+                    Clases y objetos, para representar entidades del mundo real.
+                    Herencia, permitiendo que una clase heredara características de otra.</p>
+                <h3>🎠Decada de los 70🎠</h3>
+                <p>El lenguaje Smalltalk fue desarrollado en la década de 1970 por Alan Kay y su equipo en Xerox PARC y se considera el primer lenguaje de programación totalmente orientado a objetos. Smalltalk refinó el concepto de OOP y popularizó los siguientes términos:
+                <li>Encapsulamiento: protegiendo los datos dentro de los objetos.
+                </li>
+                <li>
+                    Polimorfismo: permitiendo que métodos con el mismo nombre funcionaran de manera diferente en distintos objetos.
+                </li>
+                </p>
+                <h3>🎰Decada de los 80🎰</h3>
+                <img src="pc vieja.jpg" alt="Computu 80" class="centered-image5">
+                <p>En la década de 1980, el POO comenzó a implementarse en lenguajes más populares, lo que facilitó su adopción en la industria. Algunos idiomas principales
+                <li>C++ (1983): Creado por Bjarne Stroustrup, combinó la potencia de C con los principios de la POO.</li>
+                <li>Objective-C (1984): Extensión de C utilizada en el desarrollo de software para macOS y iOS.</li>
+                <h3>📟Decada de los 90📟</h3>
+                </p>
+                <img src="compu.jpg" alt="computadora de los 90" class="centered-image4">
+                <p>En la década de 1990, la programación orientada a objetos se convirtió en el estándar para la mayoría de los sistemas grandes, gracias a los siguientes lenguajes:
+                <li>Java (1995): Desarrollado por Sun Microsystems, introdujo el concepto de "Escribe una vez, ejecuta en cualquier lugar" gracias a la Máquina Virtual de Java (JVM).</li>
+                <li>Python (1991): Aunque inicialmente no era totalmente orientado a objetos, con el tiempo adoptó muchas características de POO.</li>
+                </p>
+                <h3>🚧Actualidad🚧</h3>
+                <p>Hoy en día, Poo es el paradigma más utilizado para el desarrollo de software, desde aplicaciones móviles hasta sistemas empresariales.
+                   Lenguajes como C#, Ruby, Kotlin, Swift y JavaScript han adoptado o incorporado principios de poo. A pesar de su éxito, en los últimos años han surgido enfoques alternativos, como la programación funcional, que pretenden abordar algunos de los desafíos de la POO, como la complejidad en sistemas muy grandes.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>💭Conceptos Básicos💭</h3>
+            
+            <h3>Clase</h3>
+            <p>Una clase es como un molde o una plantilla para crear objetos. Imagina que tienes un plano de un coche, pero aún no es un coche real, solo un diseño. Un ejemplo seria:</p>
+            <div class="example">
+                <pre>
+class micamioneta {
+    String marca;
+    String modelo;
+    
+    void arrancar() {
+        System.out.println("la camioneta arranca");
+    }
+}
+                </pre>
+                <li>La clase camioneta seria el plano</li>
+                <li>La marca y modelo son los atributos</li>
+                <li>El arrancar seria basicamente el metodo para que la camioneta ruede</li>
+            </div>
+
+            <h4>Objeto</h4>
+            <p>Un objeto es una instancia específica de una clase. Representa una entidad concreta con sus propios valores de atributos.</p>
+            <div class="example">
+                <pre>
+camioneta micamioneta = new camioneta();
+micamioneta.marca = "Toyota";
+micamioneta.modelo="Hilux"
+                </pre>
+                <li>micamioneta es un objeto creado por la clase de auto</li>
+                <li>Se le asigna la marca "Toyota" y el modelo "Hilux"</li>
+            </div>
+
+            <h4>Instancia</h4>
+            <p>Una instancia es un objeto específico creado a partir de una clase. Cada instancia tiene sus propios valores de atributos independientes.</p>
+            <div class="example">
+                <pre>
+camioneta camioneta1 = new camioneta();  // Primera instancia
+camioneta camioneta2 = new camioneta();  // Segunda instancia
+                </pre>
+                <li>camioneta1 y camioneta2 son dos instancias diferentes de la clase Coche</li>
+                <li>Cada instancia puede tener su propio fabricante y modelo sin afectar a otras instancias.</li>
+            </div>
+        </div>
+
+        <button onclick="showLanguageSelection()" class="next-btn">Siguiente</button>
+    </div>
+
+
+
+    <!-- Página de Selección de Lenguaje -->
+    <div id="languagePage" class="container" style="display: none;">
+        <h2>Selecciona tu lenguaje preferido:</h2>
+        <div class="language-selection">
+            <button onclick="selectLanguage('java')" class="language-btn">Java</button>
+            <button onclick="selectLanguage('python')" class="language-btn">Python</button>
+        </div>
+    </div>
+
+    <!-- Página de Principios -->
+    <div id="principlePage" class="container" style="display: none;">
+        <h2 id="principleTitle"></h2>
+        <div id="principleContent"></div>
+        <div id="codeExample" class="example"></div>
+        <div id="codeExplanation" class="explanation"></div>
+        <div class="navigation-buttons">
+            <button onclick="previousPrinciple()" class="nav-btn" id="prevBtn">Anterior</button>
+            <button onclick="nextPrinciple()" class="nav-btn" id="nextBtn">Siguiente</button>
+        </div>
+    </div>
+
+    <!-- Página de Examen -->
+    <div id="examPage" class="container" style="display: none;">
+        <div class="timer">Tiempo restante: <span id="countdown">3:00</span></div>
+        <div id="questionContainer"></div>
+        <button onclick="submitExam()" class="submit-btn">Entregar Examen</button>
+    </div>
+
+    <!-- Agrega este código donde quieras que aparezca la caja de sugerencias -->
+    <div class="suggestion-box">
+        <h3>Déjanos tu sugerencia</h3>
+        <form class="suggestion-form" id="suggestionForm">
+            <textarea 
+                placeholder="Escribe tu comentario aquí..." 
+                id="suggestionText" 
+                required
+            ></textarea>
+            <button type="submit">Enviar Sugerencia</button>
+        </form>
+        <div class="suggestions-list" id="suggestionsList">
+            <!-- Aquí se mostrarán las sugerencias -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
